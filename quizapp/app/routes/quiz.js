@@ -29,3 +29,9 @@ export default Ember.Route.extend({
         return questins;
     }
 });
+export default Ember.Route.extend({
+    model:function(ques) {
+      console.log(ques)
+      return ques.id;
+        }
+})
