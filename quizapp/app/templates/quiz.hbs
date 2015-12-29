@@ -1,0 +1,15 @@
+{{#each model as |questions|}}
+<br>
+{{questions.question}}
+  {{#link-to 'answer' "1" "2"}}
+<button>
+    {{questions.optionA}}
+    </button>
+    {{/link-to}}
+       {{#link-to 'answer' "1" "2"}}
+    <button>
+       {{questions.optionB}}
+   </button>
+     {{/link-to}}
+     <br>
+{{/each}}
