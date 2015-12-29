@@ -10,6 +10,9 @@ Router.map(function() {
   this.route('quiz' ,{path:"/quiz/:id/:id2"});
   this.route('quiz' ,{path:"/quiz/:id/:id2"});
   this.route("answer");
+
+
+  
   this.route('answer' ,{path:"/answer/:id/:id2"});
 
 });
