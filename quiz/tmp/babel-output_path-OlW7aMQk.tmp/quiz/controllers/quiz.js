@@ -1,3 +1,6 @@
-define('quiz/controllers/quiz', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Controller.extend({});
+define("quiz/controllers/quiz", ["exports", "ember"], function (exports, _ember) {
+  exports["default"] = _ember["default"].Controller.extend({
+    score: "0"
+
+  });
 });

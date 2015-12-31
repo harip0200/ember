@@ -10,7 +10,7 @@ define("quiz/templates/quiz", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 5,
+            "line": 8,
             "column": 0
           }
         },
@@ -27,28 +27,37 @@ define("quiz/templates/quiz", ["exports"], function (exports) {
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n score :");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
         dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
+        var el1 = dom.createComment(" {{outlet}} ");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
         dom.appendChild(el0, el1);
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(4);
+        var morphs = new Array(5);
         morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
         morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
         morphs[2] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         morphs[3] = dom.createMorphAt(fragment, 6, 6, contextualElement);
+        morphs[4] = dom.createMorphAt(fragment, 8, 8, contextualElement);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["content", "model._data.question", ["loc", [null, [1, 0], [1, 24]]]], ["inline", "input", [], ["type", "button", "value", ["subexpr", "@mut", [["get", "model._data.optionA", ["loc", [null, [2, 28], [2, 47]]]]], [], []]], ["loc", [null, [2, 0], [2, 49]]]], ["inline", "input", [], ["type", "button", "value", ["subexpr", "@mut", [["get", "model._data.optionB", ["loc", [null, [3, 28], [3, 47]]]]], [], []]], ["loc", [null, [3, 0], [3, 49]]]], ["content", "outlet", ["loc", [null, [4, 0], [4, 10]]]]],
+      statements: [["content", "model._data.question", ["loc", [null, [1, 0], [1, 24]]]], ["inline", "input", [], ["type", "button", "value", ["subexpr", "@mut", [["get", "model._data.optionA", ["loc", [null, [2, 29], [2, 48]]]]], [], []]], ["loc", [null, [2, 0], [2, 50]]]], ["inline", "input", [], ["type", "button", "value", ["subexpr", "@mut", [["get", "model._data.optionB", ["loc", [null, [4, 28], [4, 47]]]]], [], []]], ["loc", [null, [4, 0], [4, 49]]]], ["content", "score", ["loc", [null, [5, 8], [5, 17]]]], ["content", "id", ["loc", [null, [6, 1], [6, 7]]]]],
       locals: [],
       templates: []
     };
