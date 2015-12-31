@@ -1,0 +1,1 @@
+/home/test/ember/quiz/tmp/funnel-input_base_path-cjG26NFJ.tmp/0/controllers/quiz.js

@@ -1,0 +1,1 @@
+/home/test/ember/quiz/tmp/funnel-input_base_path-d9DDtXod.tmp/0/initializer-factory.js

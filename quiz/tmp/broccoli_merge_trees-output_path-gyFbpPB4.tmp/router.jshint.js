@@ -1,0 +1,1 @@
+/home/test/ember/quiz/tmp/broccoli_merge_trees-input_base_path-W1O1fMrI.tmp/0/router.jshint.js

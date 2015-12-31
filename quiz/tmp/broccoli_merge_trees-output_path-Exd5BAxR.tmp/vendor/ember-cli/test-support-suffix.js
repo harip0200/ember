@@ -1,0 +1,1 @@
+/home/test/ember/quiz/tmp/config_replace-output_path-YPDqT5Je.tmp/test-support-suffix.js

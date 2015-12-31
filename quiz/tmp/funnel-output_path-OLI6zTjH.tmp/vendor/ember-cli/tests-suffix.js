@@ -1,0 +1,1 @@
+/home/test/ember/quiz/tmp/funnel-input_base_path-Z5XV9ynR.tmp/0//tests-suffix.js

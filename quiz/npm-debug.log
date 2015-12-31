@@ -1,0 +1,82 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ember-cli-fixture-loader',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.14
+3 info using node@v0.10.41
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /home/test/ember/quiz/package.json
+6 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/broccoli-asset-rev/package.json
+7 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli/package.json
+8 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-app-version/package.json
+9 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-babel/package.json
+10 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-content-security-policy/package.json
+11 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-dependency-checker/package.json
+12 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-htmlbars/package.json
+13 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-htmlbars-inline-precompile/package.json
+14 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-ic-ajax/package.json
+15 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-inject-live-reload/package.json
+16 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-qunit/package.json
+17 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-release/package.json
+18 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-sri/package.json
+19 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-cli-uglify/package.json
+20 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-data/package.json
+21 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-disable-proxy-controllers/package.json
+22 verbose installManyTop reading scoped package data from /home/test/ember/quiz/node_modules/ember-export-application-global/package.json
+23 verbose readDependencies loading dependencies from /home/test/ember/quiz/package.json
+24 silly cache add args [ 'ember-cli-fixture-loader', null ]
+25 verbose cache add spec ember-cli-fixture-loader
+26 silly cache add parsed spec { raw: 'ember-cli-fixture-loader',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'ember-cli-fixture-loader',
+26 silly cache add   rawSpec: '',
+26 silly cache add   spec: 'latest',
+26 silly cache add   type: 'tag' }
+27 silly addNamed ember-cli-fixture-loader@latest
+28 verbose addNamed "latest" is being treated as a dist-tag for ember-cli-fixture-loader
+29 info addNameTag [ 'ember-cli-fixture-loader', 'latest' ]
+30 silly mapToRegistry name ember-cli-fixture-loader
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/ember-cli-fixture-loader
+34 verbose addNameTag registry:https://registry.npmjs.org/ember-cli-fixture-loader not in flight; fetching
+35 verbose request uri https://registry.npmjs.org/ember-cli-fixture-loader
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 09:04:52
+38 verbose request id 571bac4f1c9a81af
+39 http request GET https://registry.npmjs.org/ember-cli-fixture-loader
+40 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=140166245844864:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:782:
+41 info attempt registry request try #2 at 09:05:03
+42 http request GET https://registry.npmjs.org/ember-cli-fixture-loader
+43 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=140166245844864:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:782:
+44 info attempt registry request try #3 at 09:06:03
+45 http request GET https://registry.npmjs.org/ember-cli-fixture-loader
+46 verbose stack Error: tunneling socket could not be established, cause=140166245844864:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:782:
+46 verbose stack
+46 verbose stack     at ClientRequest.onError (/usr/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:174:17)
+46 verbose stack     at ClientRequest.g (events.js:180:16)
+46 verbose stack     at ClientRequest.emit (events.js:95:17)
+46 verbose stack     at CleartextStream.socketErrorListener (http.js:1550:9)
+46 verbose stack     at CleartextStream.emit (events.js:95:17)
+46 verbose stack     at SecurePair.<anonymous> (tls.js:1411:15)
+46 verbose stack     at SecurePair.emit (events.js:95:17)
+46 verbose stack     at SecurePair.error (tls.js:1018:27)
+46 verbose stack     at CleartextStream.read [as _read] (tls.js:463:17)
+46 verbose stack     at CleartextStream.Readable.read (_stream_readable.js:341:10)
+47 verbose cwd /home/test/ember/quiz
+48 error Linux 3.13.0-74-generic
+49 error argv "node" "/usr/bin/npm" "install" "ember-cli-fixture-loader" "--save"
+50 error node v0.10.41
+51 error npm  v2.14.14
+52 error code ECONNRESET
+53 error network tunneling socket could not be established, cause=140166245844864:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:782:
+53 error network
+53 error network This is most likely not a problem with npm itself
+53 error network and is related to network connectivity.
+53 error network In most cases you are behind a proxy or have bad network settings.
+53 error network
+53 error network If you are behind a proxy, please make sure that the
+53 error network 'proxy' config is set properly.  See: 'npm help config'
+54 verbose exit [ 1, true ]

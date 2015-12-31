@@ -1,0 +1,1 @@
+/home/test/ember/quiz/tmp/funnel-input_base_path-RIEbH2Nr.tmp/0/bower_components/ember-cli-test-loader/test-loader.js
