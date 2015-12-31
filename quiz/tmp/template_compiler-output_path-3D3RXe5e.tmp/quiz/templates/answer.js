@@ -9,7 +9,7 @@ export default Ember.HTMLBars.template((function() {
           "column": 0
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "column": 0
         }
       },
@@ -20,8 +20,6 @@ export default Ember.HTMLBars.template((function() {
     hasRendered: false,
     buildFragment: function buildFragment(dom) {
       var el0 = dom.createDocumentFragment();
-      var el1 = dom.createTextNode("jfvhk \n");
-      dom.appendChild(el0, el1);
       return el0;
     },
     buildRenderNodes: function buildRenderNodes() { return []; },

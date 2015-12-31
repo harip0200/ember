@@ -10,7 +10,7 @@ define("quiz/templates/answer", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 2,
+            "line": 1,
             "column": 0
           }
         },
@@ -21,8 +21,6 @@ define("quiz/templates/answer", ["exports"], function (exports) {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("jfvhk \n");
-        dom.appendChild(el0, el1);
         return el0;
       },
       buildRenderNodes: function buildRenderNodes() {
