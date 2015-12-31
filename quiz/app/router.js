@@ -4,7 +4,6 @@ import config from './config/environment';
 const Router = Ember.Router.extend({
   location: config.locationType
 });
-       
 Router.map(function() {
   this.route("quiz" , {path :"/quiz/:id"},function() {
     this.route('answer');
